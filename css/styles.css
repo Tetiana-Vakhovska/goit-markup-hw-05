@@ -99,6 +99,8 @@ body {
 .client-example:focus {
   border: 1px solid var(--accent-color);
   color: var(--accent-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 p,
 h1,
