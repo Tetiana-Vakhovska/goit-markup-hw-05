@@ -73,6 +73,8 @@ body {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
   border-radius: 50%;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .client {
   display: flex;
@@ -217,6 +219,8 @@ img {
 .portfolio-list-item-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .img {
   display: block;
@@ -290,6 +294,8 @@ img {
 .link-nav:hover,
 .link-nav:focus {
   color: var(--accent-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .secondary-button {
   font-size: 16px;
@@ -308,6 +314,8 @@ img {
   background: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .secondary-button-title {
   display: flex;
@@ -346,6 +354,8 @@ img {
 .contact-link:hover,
 .contact-link:focus {
   color: var(--accent-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .logo {
   font-family: Raleway;
@@ -366,6 +376,8 @@ img {
 }
 .contact-footer:hover {
   color: var(--primary-white-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact-footer-link {
   line-height: 1.7;
@@ -430,6 +442,8 @@ img {
 .social-networks-link-footer:focus {
   border-radius: 50%;
   background-color: var(--accent-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-networks-footer {
