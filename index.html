@@ -14,7 +14,6 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="stylesheet" href="./js/modal.js " />
   </head>
   <body>
     <header>
@@ -462,7 +461,10 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button data-modal-close>x</button>
+        <button class="button-data-modal-close" data-modal-close>
+       <svg class="button-data-modal-close-icon">
+                      <use href="./images/symbol-defs.svg#Vector"></use>
+                    </svg>
       </div>
     </div>
     <script src="./js/modal.js"></script>
