@@ -58,9 +58,9 @@ body {
   height: 44px;
   color: #afb1b8;
   border-radius: 50%;
+  transition-property: color background-color;
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  text-decoration: 250ms;
-  transition-property: color;
   background-color: var(--primary-white-color);
 }
 .social-networks-item:not(:last-child) {
@@ -91,9 +91,9 @@ body {
   justify-content: center;
   border-radius: 4px;
   color: #afb1b8;
+  transition-property: color border;
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  text-decoration: 250ms;
-  transition-property: color;
 }
 .client-icon {
   fill: currentColor;
@@ -206,18 +206,21 @@ img {
   flex-wrap: wrap;
   margin-top: -30px;
   margin-left: -30px;
+  overflow: hidden;
 }
 .portfolio-list-item {
   flex-basis: calc(100% / 3 - 30px);
   margin: 30px 0 0 30px;
   width: 370px;
   height: 404px;
-  overflow: hidden;
 }
 .portfolio-list-item-link::before {
   display: flex;
+  font-size: 18px;
+  line-height: 1.55;
+  font-weight: 400;
+  font-style: normal;
   align-items: center;
-  text-align: left;
   position: absolute;
   content: 'Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.';
   width: 370px;
@@ -226,18 +229,17 @@ img {
   opacity: 0;
   color: var(--primary-white-color);
   transform: translateY(100%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.portfolio-list-item-link:hover:before {
+.portfolio-list-item-link:hover::before {
   opacity: 1;
   transform: translateY(0);
 }
 .portfolio-list-item-link {
   display: block;
   position: relative;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  text-decoration: 250ms;
-  transition-property: color;
 }
 .portfolio-list-item-link:hover,
 .portfolio-list-item-link:focus {
@@ -246,6 +248,7 @@ img {
 }
 .img {
   display: block;
+
   width: 370px;
   height: 294px;
   max-width: 100%;
@@ -304,7 +307,6 @@ img {
   display: block;
   padding: 32px 0;
   position: relative;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link-nav {
   font-size: 14px;
@@ -314,8 +316,9 @@ img {
   display: block;
   padding: 32px 0;
   position: relative;
+  transition-property: color;
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  text-decoration: 250ms;
 }
 .link-nav-active::after {
   background-color: var(--accent-color);
@@ -351,9 +354,9 @@ img {
   padding: 6px 22px;
   border: none;
   border-radius: 4px;
+  transition-property: color background;
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  text-decoration: 250ms;
-  transition-property: color;
 }
 .secondary-button:hover,
 .secondary-button:focus {
@@ -395,9 +398,9 @@ img {
   display: flex;
   align-items: center;
   color: var(--primary-text-color);
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  text-decoration: 250ms;
   transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact-link:hover,
 .contact-link:focus {
@@ -419,9 +422,9 @@ img {
 .contact-footer {
   line-height: 1.7;
   color: rgba(255, 255, 255, 0.6);
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  text-decoration: 250ms;
   transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact-footer:hover {
   color: var(--primary-white-color);
@@ -483,9 +486,9 @@ img {
   background-color: rgba(255, 255, 255, 0.1);
   display: flex;
   align-items: center;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  text-decoration: 250ms;
   transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-networks-link-footer:hover,
@@ -502,6 +505,9 @@ img {
   margin-right: 10px;
 }
 .product-actions {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1, 17;
   background: rgba(47, 48, 58, 0.8);
   color: #ffffff;
   position: absolute;
