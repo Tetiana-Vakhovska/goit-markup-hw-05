@@ -213,33 +213,34 @@ img {
   margin: 30px 0 0 30px;
   width: 370px;
   height: 404px;
+  overflow: hidden;
 }
-.portfolio-list-item-link::before {
+.active-portfolio::before {
   display: flex;
   font-size: 18px;
+  font-family: Roboto;
   line-height: 1.55;
   font-weight: 400;
   font-style: normal;
   align-items: center;
   position: absolute;
-  content: 'Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.';
-  width: 370px;
+  content: '  Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.';
   height: 294px;
   background-color: var(--accent-color);
-  opacity: 0;
   color: var(--primary-white-color);
   transform: translateY(100%);
-  transition-property: transform;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.portfolio-list-item-link:hover::before {
-  opacity: 1;
+.portfolio-list-item:hover .active-portfolio::before {
   transform: translateY(0);
+}
+.active-portfolio {
+  position: relative;
+  overflow: hidden;
 }
 .portfolio-list-item-link {
   display: block;
-  position: relative;
+  overflow: hidden;
 }
 .portfolio-list-item-link:hover,
 .portfolio-list-item-link:focus {
@@ -258,17 +259,20 @@ img {
   line-height: 2;
   color: var(--title-text-color);
   font-size: 18px;
+  overflow: hidden;
 }
 .portfolio-item-divide {
   font-size: 16px;
   line-height: 1.86;
   color: var(--primary-text-color);
   margin-top: 4px;
+  overflow: hidden;
 }
 .card-content {
   padding: 20px 24px;
   border: 1px solid var(--portfolio-border-color);
   border-top: none;
+  overflow: hidden;
 }
 .team {
   display: flex;
